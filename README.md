@@ -1,6 +1,6 @@
 # MooziBot
 
-### Moozi is Farsi for a "prankster", or a jerk but not a mean one. MooziBot is the original pranksta gangsta discord bots. It is designed in ruby using Discordrb API.
+### Moozi is Farsi for a "prankster", or a jerk but not a mean one. MooziBot is the original pranksta gangsta discord bot. It is designed in ruby using Discordrb API.
 
 ## Install:
 
