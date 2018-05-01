@@ -1,6 +1,6 @@
 require 'discordrb'
 
-bot = Discordrb::Commands::CommandBot.new token: '', prefix: '`'
+bot = Discordrb::Commands::CommandBot.new token: 'NDQwMDMwOTkyNTYxMDc4Mjky.Dcb8FQ.gk-2EV7FUM1__W6XLPZzsXWXTSw', prefix: '`'
 
 bot.command(:dice) do |event|
 	a = rand 1..6
@@ -24,6 +24,10 @@ bot.command(:link) do |event|
 	event.respond 'https://discordapp.com/api/oauth2/authorize?client_id=439295168848461824&permissions=8&scope=bot'
 end
 
+bot.command(:oof) do |event|
+	event.channel.send_file(File.open('gopnik.jpeg', ))
+end
+
 bot.command(:exit, help_available: false) do |event|
 	break unless event.user.id == 267000792781815809
 
@@ -32,3 +36,4 @@ bot.command(:exit, help_available: false) do |event|
 end
 
 bot.run
+channel.run
