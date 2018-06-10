@@ -36,4 +36,3 @@ bot.command(:exit, help_available: false) do |event|
 end
 
 bot.run
-channel.run
