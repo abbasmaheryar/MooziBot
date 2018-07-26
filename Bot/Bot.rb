@@ -1,6 +1,8 @@
 require 'discordrb'
 
-bot = Discordrb::Commands::CommandBot.new token: 'NDQwMDMwOTkyNTYxMDc4Mjky.Dcb8FQ.gk-2EV7FUM1__W6XLPZzsXWXTSw', prefix: '`'
+#Uncomment the line below and add your token where it says Your token inside the quotations.
+
+#bot = Discordrb::Commands::CommandBot.new token: 'Your token', prefix: '`'
 
 bot.command(:dice) do |event|
 	a = rand 1..6
