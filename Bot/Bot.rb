@@ -30,8 +30,10 @@ bot.command(:oof) do |event|
 	event.channel.send_file(File.open('gopnik.jpeg', ))
 end
 
+#Insert your user id so that the bot will shut down only when the correct user activates the command
+
 bot.command(:exit, help_available: false) do |event|
-	break unless event.user.id == 267000792781815809
+	#break unless event.user.id == Your user id
 
 	bot.send_message(event.channel.id, 'I am shutting down, goodbye!')
 	exit
