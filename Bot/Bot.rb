@@ -27,7 +27,7 @@ bot.command(:link) do |event|
 end
 
 bot.command(:oof) do |event|
-	event.channel.send_file(File.open('gopnik.jpeg', ))
+	event.channel.send_file(File.open('assets/gopnik.jpeg', ))
 end
 
 #Insert your user id so that the bot will shut down only when the correct user activates the command
